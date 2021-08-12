@@ -25,10 +25,25 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'beauty-magic' ); ?></a>
 
-
-
-
 	<header id="masthead" class="site-header">
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col site-header__logo">
+					<?php the_custom_logo(); ?>
+				</div>
+
+				<div class="col-md-5">
+					Search
+				</div>
+
+				<div class="col cart">
+					Cart
+				</div>
+			</div>
+		</div>
+
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
