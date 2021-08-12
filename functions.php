@@ -141,6 +141,8 @@ add_action( 'widgets_init', 'beauty_magic_widgets_init' );
  */
 function beauty_magic_scripts() {
 	wp_enqueue_style( 'beauty-magic-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'beauty-magic-main', get_template_directory_uri() . '/css/main.css');
+
 	wp_style_add_data( 'beauty-magic-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'beauty-magic-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
@@ -150,6 +152,17 @@ function beauty_magic_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'beauty_magic_scripts' );
+
+/**
+ * Custom Fonts
+ */
+function enqueue_custom_fonts() {
+	if(!is_admin()){
+		wp_register_style('Poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+		wp_enqueue_style('Poppins');
+	}
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_fonts');
 
 /**
  * Implement the Custom Header feature.
