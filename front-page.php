@@ -16,22 +16,35 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-    <h1>Front Page</h1>
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<section class="container pb-5 pt-5">
+			<div id="carouselExampleControls" class="carousel slide overflow-hidden rounded" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="<?php echo get_template_directory_uri();?>/img/slider/1.png" loading="lazy" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="<?php echo get_template_directory_uri();?>/img/slider/2.png" loading="lazy" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="<?php echo get_template_directory_uri();?>/img/slider/3.png" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
 
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
+		<section class="container">
+			<h1 class="text-center">Productos Populares</h1>
+			<p></p>
+		</section>
+	</main>
 
 <?php
-get_footer();
+//get_footer();
