@@ -42,9 +42,12 @@ get_header();
 
 		<section class="container">
 			<h1 class="text-center">Productos Populares</h1>
-			<p></p>
+
+			<div class="pt-5 pb-5">
+				<?php echo do_shortcode('[products colums=4 limit=8]'); ?>
+			</div>
 		</section>
 	</main>
 
 <?php
-//get_footer();
+get_footer();

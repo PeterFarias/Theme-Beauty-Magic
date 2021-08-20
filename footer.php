@@ -12,19 +12,32 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'beauty-magic' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'beauty-magic' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'beauty-magic' ), 'beauty-magic', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<?php the_custom_logo(); ?>
+
+					<div class="social-media pt-5">
+						<div class="social-media-icons d-flex justify-content-center align-items-center me-3">
+							<i class="bi bi-facebook"></i>
+						</div>
+						<div class="social-media-icons d-flex justify-content-center align-items-center me-3">
+							<i class="bi bi-twitter"></i>
+						</div>
+						<div class="social-media-icons d-flex justify-content-center align-items-center">
+							<i class="bi bi-instagram"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<h2>Categorias</h2>
+				</div>
+				<div class="col-4">
+					<h2>Legal</h2>
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
