@@ -11,7 +11,7 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer pt-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-4">

@@ -211,3 +211,8 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	$fragments['a.cart-customlocation'] = ob_get_clean();
 	return $fragments;
 }
+
+/**
+ * WooCommerce
+ */
+add_theme_support('woocommerce');
