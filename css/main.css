@@ -10781,6 +10781,13 @@ textarea.form-control-lg {
   font-size: 0.9rem;
   padding-left: 1.4rem;
 }
+.site-header .dropdown .bi {
+  font-size: 30px;
+  color: #7f187f;
+}
+.site-header .cart .bi {
+  font-size: 28px;
+}
 
 /* Menu navigation */
 .main-navigation {
@@ -10826,4 +10833,14 @@ textarea.form-control-lg {
 }
 .social-media-icons .bi-instagram {
   color: #e95950;
+}
+
+.site-footer .list li {
+  list-style: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.wp-post-image {
+  border-radius: 20px;
 }/*# sourceMappingURL=main.css.map */

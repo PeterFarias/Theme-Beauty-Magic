@@ -72,6 +72,19 @@ $utilities: (
     font-size: 0.9rem;
     padding-left: 1.4rem;
   }
+
+  .dropdown{
+    .bi{
+      font-size: 30px;
+      color: #7f187f;
+    }
+  }
+
+  .cart{
+    .bi{
+      font-size: 28px;
+    }
+  }
 }
 
 /* Menu navigation */
@@ -127,4 +140,17 @@ $utilities: (
       color: #e95950;
     }
   }
+}
+.site-footer{
+  .list{
+    li{
+      list-style: none;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.wp-post-image{
+  border-radius: 20px;
 }

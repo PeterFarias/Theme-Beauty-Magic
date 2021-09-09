@@ -85,9 +85,11 @@
 							<i class="bi bi-list"></i>
 						</button>
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
+							<li><a class="dropdown-item" href="#">Linea Corporal</a></li>
+							<li><a class="dropdown-item" href="#">Linea Facial</a></li>
+							<li><a class="dropdown-item" href="#">Linia Capilar</a></li>
+							<li><a class="dropdown-item" href="#">Body Mist</a></li>
+							<li><a class="dropdown-item" href="#">Cera</a></li>
 						</ul>
 					</div>
 
@@ -102,7 +104,7 @@
 						</ul>
 					</div>
 
-					<div class="d-flex align-item-center">
+					<div class="d-flex align-items-center cart">
 						<a href="<?php echo wc_get_cart_url(); ?>"><i class="bi bi-bag p-2"></i></a>
 						<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> – <?php echo WC()->cart->get_cart_total(); ?></a>
 					</div>
@@ -111,6 +113,7 @@
 			</div>
 		</div>
 
+		<!--
 		<nav id="site-navigation" class="main-navigation bg-primary">
 			<div class="container d-flex justify-content-center">
 				<div class="row">
@@ -126,6 +129,7 @@
 					</div>
 				</div>
 			</div>
+		-->
 			
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

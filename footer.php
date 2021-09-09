@@ -31,10 +31,24 @@
 				</div>
 
 				<div class="col-4">
-					<h2>Categorias</h2>
+					<h2 class="text-center">Categorias</h2>
+
+					<ul class="pt-3 list">
+						<li>Linea Corporal</li>
+						<li>Linea Facial</li>
+						<li>Linea Capilar</li>
+						<li>Body Mist</li>
+						<li>Cera</li>
+					</ul>
 				</div>
 				<div class="col-4">
-					<h2>Legal</h2>
+					<h2 class="text-center">Legal</h2>
+
+					<ul class="pt-3 list">
+						<li>Terminos y Condiciones</li>
+						<li>Politicas de Privacidad</li>
+						<li>Envios</li>
+					</ul>
 				</div>
 			</div>
 		</div>
